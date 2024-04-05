@@ -1,0 +1,105 @@
+/* Configuración de Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definición de fuentes personalizadas */
+@font-face {
+  font-family: "Poppins";
+  src: url("/src/assets/fonts/PoppinsLight.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/src/assets/fonts/PoppinsRegular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/src/assets/fonts/PoppinsMedium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+/* Estilos globales */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --BackgroundColor: #ededed;
+}
+
+body {
+  background-color: var(--BackgroundColor);
+  overflow-y: scroll;
+}
+
+/* Estilos de encabezados */
+h1,
+h2,
+h3 {
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 1.8px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* Estilos de texto */
+b,
+p,
+a,
+em,
+span {
+  font-family: "Poppins";
+  font-weight: 400;
+}
+
+b {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1.1px;
+}
+
+p,
+a,
+em,
+span {
+  font-size: 15.5px;
+  line-height: 22px;
+  word-spacing: 1.2px;
+}
+
+/* Estilos de botón */
+Button {
+  font-family: "Poppins";
+  font-weight: 500;
+  padding: 5px 10px;
+  background-color: rgb(94, 146, 237);
+  color: white;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
